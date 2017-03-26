@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://ma.si-3.com.tw/SiMA2016/ws/test.asmx?wsdl" docRef="https://ma.si-3.com.tw/SiMA2016/ws/test.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://ma.si-3.com.tw/SiMA2016/ws/test.asmx" xmlns:q1="SICODE" binding="q1:test3Soap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://ma.si-3.com.tw/SiMA2016/ws/test.asmx" xmlns:q2="SICODE" binding="q2:test3Soap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

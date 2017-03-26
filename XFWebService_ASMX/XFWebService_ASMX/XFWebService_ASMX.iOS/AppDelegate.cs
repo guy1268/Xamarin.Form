@@ -6,6 +6,8 @@ using Foundation;
 using UIKit;
 using Prism.Unity;
 using Microsoft.Practices.Unity;
+using XFWebService_ASMX.ViewModels;
+using XFWebService_ASMX.iOS.Model.WebService;
 
 namespace XFWebService_ASMX.iOS
 {
@@ -25,6 +27,9 @@ namespace XFWebService_ASMX.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            MainPageViewModel.WebSerManager = new XFWebService_ASMX.Model.WebService.WebServiceManager(new MobileWebService());
+
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);
